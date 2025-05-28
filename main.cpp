@@ -16,6 +16,7 @@
 #define RED     "\033[1;31m"
 #define BLUE    "\033[1;34m"
 #define MBLUE   "\033[94m" // main blue
+#define PURP    "\033[35m" // 2nd choice
 using namespace std;
 
 
@@ -115,7 +116,7 @@ int main() {
             int r, c, v;
             if (moveList.undoMove(r, c, v)) {
                 board.removeNumber(r, c);
-                cout << "\033[35mMove undone!\033[0m The past trembles..."<<endl;
+                cout <<PURP<< "Move undone!"<<RESET<<"The past trembles..."<<endl;
             } else {
                 cout << "Nothing to undo!"<<endl;
             }
@@ -152,7 +153,7 @@ int main() {
     }
 
     if(!quitGame){
-      cout << "SUCCESS!"<<endl;
+      cout <<PURP<< "Total Attempts: "<< tries <<RESET<<endl;
       cout << BLUE << R"(
       
  __   __  _______  __   __    _     _  ___   __    _  __  
