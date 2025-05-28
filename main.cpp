@@ -15,7 +15,6 @@
 #define YELLOW  "\033[1;33m"
 #define RED     "\033[1;31m"
 #define BLUE    "\033[1;34m"
-#define MBLUE   "\033[94m" // main blue
 #define PURP    "\033[35m" // 2nd choice
 using namespace std;
 
@@ -31,7 +30,7 @@ void dramaticPause() {
 
 void printBorder(){
     // border
-        cout << MBLUE<< R"(
+        cout << BLUE<< R"(
 .--.      .-'.      .--.      .--.      .--.      .--.
 :::::.\::::::::.\::::::::.\::::::::.\::::::::.\:::::::.\
 '      `--'      `.-'      `--'      `--'      `--'      `
@@ -39,7 +38,7 @@ void printBorder(){
 }
 
 void splashScreen() {
-    cout << MBLUE << R"(
+    cout << BLUE << R"(
            _____           __    
           / ___/__  ______/ /___ 
           \__ \/ / / / __  / __ \
